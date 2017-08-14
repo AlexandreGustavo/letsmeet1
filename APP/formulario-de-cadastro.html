@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+	<title>Formulario de cadastro</title>
+</head>
+<body class="fundo-formulario">
+	<header>
+		<p>Faça seu Cadastro</p>
+	</header>
+	<form class="formulario-de-cadastro" action="processar-letsmeet.php" method="POST">
+
+		<input type="text" name="NomeUsuario" id="cnome" size="20" maxlength="50" placeholder="Digite seu Nome">
+		<br><br>
+		<input type="text" name="SobrenomeUsuario" id="csobrenome" size="20" maxlength="20" placeholder="Digite seu Sobrenome">
+		<br><br>
+		<input type="text" name="ApelidoUsuario" id="capelido" size="20" maxlength="20" placeholder="Digite seu Apelido">
+		<br><br>
+		<input type="number" name="IdadeUsuario">
+		<br><br>
+		<input type="radio" name="SexoUsuario" id="cmasculino">	Masculino  <input type="radio" name="sexo" id="cfeminino">	Feminino 
+		<br><br>
+		<input type="text" name="EmailUsuario" id="cemail" size="20" maxlength="50" placeholder="Digite seu E-mail">
+		<br><br>
+		<input type="password" name="SenhaUsuario" id="csenha" size="20" maxlength="20" placeholder="Digite sua Senha">
+		<br><br>
+		<input type="password" name="ConfirmarSenha" id="cconfirmar" size="20" maxlength="20" placeholder="Confirme sua Senha">
+		<br><br>
+		<input type="submit" name="enviar" value="enviar">
+
+</form>
+
+	<div class="foto-cadastro">
+		
+	</div>
+	<div class="sua-foto">
+		Sua foto
+	</div>
+
+
+
+</body>
+</html>
