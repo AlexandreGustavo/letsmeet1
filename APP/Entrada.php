@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-		<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="h-style.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
@@ -54,15 +54,11 @@
 	$trabalho = $_SESSION['TrabalhoUsuario'];
 	$culinaria = $_SESSION['CulinariaUsuario'];
 	
-
-
-	
-
 	
 
 	$conexao = mysqli_connect('localhost', 'root', 'root', 'letsmeet') or die ('Erro ao tentar conectar');
 
-	$sql = "SELECT * FROM cadastro WHERE NomeUsuario = '$esporte' or LazerUsuario = '$lazer' or MusicalUsuario = '$musica' or TrabalhoUsuario = '$trabalho' or CulinariaUsuario = '$culinaria';";
+	$sql = "SELECT * FROM cadastro WHERE EsporteUsuario = '$esporte' or LazerUsuario = '$lazer' or MusicalUsuario = '$musica' or TrabalhoUsuario = '$trabalho' or CulinariaUsuario = '$culinaria';";
 
 	$resultado = mysqli_query($conexao,$sql) or die ('Erro ao retornar dados');
 
@@ -77,6 +73,13 @@
 			$musica = $registro['MusicalUsuario'];
 			$trabalho = $registro['TrabalhoUsuario'];
 			$culinaria = $registro['CulinariaUsuario'];
+			$Facebook = $registro['Facebook'];
+			$whatsapp = $registro['whatsapp'];
+			$instagram = $registro['instagram'];
+			$twitter = $registro['twitter'];
+			$snapchat = $registro['snapchat'];
+			$skype = $registro['skype'];
+
 			
 
 
@@ -93,6 +96,7 @@ echo "<div class='teste_quadrado'>
 
 	echo "<div style='text-align: center;'>Nome: $nome $Sobrenome</div>"; 	
 	echo "<div style='text-align: center;'>Apelido: $apelido</div>"; 	
+	echo "<div style='text-align: center;'>whatsapp: $whatsapp</div>"; 
 	
 
 }

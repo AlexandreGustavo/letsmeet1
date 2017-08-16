@@ -171,8 +171,28 @@ form input[type=password] {
 #culinaria{
 		padding: 1.3% 19.8%;
 }
+.redes{
+	background-color:#87CEEB;
 
+}
 
+ .redes h2{
+
+	font-weight:bold;
+	font-size:25px;
+	position:relative;
+	top:15px;
+	margin-bottom:30px;
+	color:white;
+}
+form input[type=submit]{
+	border-style: none;
+	color:white;
+	background-color:rgba(0,0,0,0.4);
+
+} 
+
+ 
 
 
 

@@ -32,6 +32,12 @@
 				$_SESSION["MusicalUsuario"] = $registro['MusicalUsuario'];
 				$_SESSION["TrabalhoUsuario"] = $registro['TrabalhoUsuario'];
 				$_SESSION["CulinariaUsuario"] = $registro['CulinariaUsuario'];
+				$_SESSION["Facebook"] = $registro['Facebook'];
+				$_SESSION["whatsapp"] = $registro['whatsapp'];
+				$_SESSION["instagram"] = $registro['instagram'];
+				$_SESSION["twitter"] = $registro['twitter'];
+				$_SESSION["snapchat"] = $registro['snapchat'];
+				$_SESSION["skype"] = $registro['skype'];
 
 			redirecionar("Entrada.php?nome=$nome");
 		}	
