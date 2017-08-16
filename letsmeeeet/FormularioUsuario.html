@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Faça seu cadastro</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Descrição do meu site">
+	<meta name="Kaywords" content="palavras,separadas,por,virgula">
+	<meta name="author" content="Helio Junior">
+	<meta name="viewport" content="width=device=width,initial-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<p>Faça seu Cadastro</p>
+	</header>
+
+	<form name="cadastro" action="processar-letsmeet.php" method="post" style="margin-top: 6%;">
+	
+		<input type="text" id="nome" placeholder="Digite seu Nome" required name="NomeUsuario" >
+			<br><br>
+		<input type="text" id="sobrenome" placeholder="Digite seu Sobrenome" required name="SobrenomeUsuario" >
+			<br><br>
+		<input type="text" id="apelido" name="ApelidoUsuario" placeholder="Digite seu Apelido" >
+			<br><br>
+		<input type="date" id="idade" required name="IdadeUsuario">
+			<br><br>
+		 <select required id="sexo" name="SexoUsuario">
+
+		  		<option  disabled="" selected="Qual seu sexo ?">Qual seu sexo ?</option>
+				<option value="M">Masculino</option>
+				<option value="F">Feminino</option>
+		  </select> 
+		  
+			<br><br>
+	 	<input type="text" required   placeholder="Crie um usuario" name="Usuario" >
+			<br><br>
+		<input type="password" required  placeholder="Crie sua Senha" name="SenhaUsuario" >
+			<br><br>
+		<input type="password" required  placeholder="Confirme sua Senha" name="ConfirmarSenha" >
+			<br><br>
+
+
+		<select required id="esporte" name="EsporteUsuario">
+				<option  disabled="" selected="Qual seu esporte favorito ?">Qual seu esporte favorito ?</option>
+		  		<option value="Futebol">Futebol</option>
+				<option value="Volei">Volei</option>
+				<option value="Basquete">basquete</option>
+				<option value="Musculação">Musculaçao</option>
+				<option value="Artes marciais">Artes marciais</option>
+				<option value="Não tenho">Não tenho</option>
+				<option value="Outros">Outros</option>
+		  </select> 
+
+<br><br>
+
+		<select  required id="lazer" name="LazerUsuario" >
+				<option  disabled="" selected="Qual seu lazer favorito ?">Qual seu lazer favorito ?</option>
+				<option value="Cinema">Cinemas</option>
+				<option value="Parque">Parques</option>
+				<option value="Restaurante">Restaurantes</option>
+				<option value="Biblioteca">Bibliotecas</option>
+				<option value="Estadio">Estadios</option>
+				<option value="Nao tenho">Não tenho</option>
+				<option value="Outros">Outros</option>
+		  </select> 
+
+		  <br><br>
+
+		  <select required id="time" name="TimeUsuario" >
+		  		<option  disabled="" selected="Qual seu time de coraçao ?">Qual seu time de coraçao ?</option>
+				<option value="São Paulo">São Paulo</option>
+				<option value="Corinthias">Corinthias</option>
+				<option value="Santos">Santos</option>
+				<option value="Palmeiras">Palmeiras</option>
+				<option value="Flamengo">Flamengo</option>
+				<option value="Não tenho">Não tenho</option>
+				<option value="Outros">Outros</option>
+		  </select> 
+
+		  <br><br>
+
+		  <select required id="musica" name="MusicalUsuario" >
+		  		<option  disabled="" selected="Estilo musical favorito ?">Estilo musical favorito ?</option>
+				<option value="Rock">Rock</option>
+				<option value="Samba">Samba</option>
+				<option value="MPB">MPB</option>
+				<option value="Sertanejo">Sertanejo</option>
+				<option value="Eletronica">Eletronica</option>
+				<option value="Não tenho">Não tenho</option>
+				<option value="Outros">Outros</option>
+		  </select> 
+
+		  <br><br>
+
+		   <select required id="trabalho" name="TrabalhoUsuario">
+		   		<option  disabled="" selected="Área que trabala ou estuda ?">Área que trabala ou estuda ?</option>
+				<option value="Tecnologia">Área da tecnologia</option>
+				<option value="Saude">Área da saúde</option>
+				<option value="Administrativo">Setor administrativo</option>
+				<option value="Educador">Educador</option>
+				<option value="Autonomo">Autônomo </option>
+				<option value="Não tenho">Não tenho</option>
+				<option value="Outros">Outros</option>
+		  </select> 
+
+		  <br><br>
+
+		    <select required id="culinaria" name="CulinariaUsuario" >
+				<option  disabled="" selected="Culinaria favorita ?">Culinaria favorita ?</option>
+				<option value="Japonesa">Culinaria japonêsa</option>
+				<option value="Brasileira">Culinaria brasileira</option>
+				<option value="italiana">Culinaria italiana</option>
+				<option value="Alemã">Culinária alemã</option>
+				<option value="Africana">Culinária africana</option>
+				<option value="Não tenho">Não tenho</option>
+				<option value="Outros">Outros</option>
+		  </select> 
+<br><br>
+
+<div  class="redes">
+<h2>Redes sociais</h2>
+<input   type="text"  name="Facebook" placeholder="Facebook"  >
+<br><br>
+<input   type="text" name="whatsapp" placeholder="Whatsapp">
+<br><br>
+<input  type="text"  name="instagram" placeholder="Instagran" >
+<br><br>
+<input   type="text" name="twitter" placeholder="Twitter">
+<br><br>
+<input  type="text" name="snapchat" placeholder="Snapchat">
+<br><br>
+<input  type="text" name="skype" placeholder="Skype">
+<br><br>
+</div>		   
+<br><br>
+<input style="float: right; padding:10px 10px; margin-right:33px; margin-top: -5%;" type="submit" name="enviar" value="Cadastrar"><br><br>
+		 
+	</form>
+	<a href="login.html"><input style="float: left;margin-left:30px;color:white;
+	background-color:rgba(0,0,0,0.4); margin-top: -15%; border-style: none;  padding:10px 20px; " type="submit" value="Voltar"></a>
+
+
+
+</body>
+</html>

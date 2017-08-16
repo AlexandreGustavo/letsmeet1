@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Testando conexão com o banco de dados</title>
+</head>
+<body>
+<h1>Formulario de cadastro do Usuario </h1>
+<form name="cadastro" action="processar-letsmeet.php" method="post">
+<label>Nome cliente: </label><input type="text" name="NomeUsuario" size="10">
+<label>Sobrenome cliente: </label><input type="text" name="SobrenomeUsuario" size="10">
+<label>Apelido: </label><input type="text" name="ApelidoUsuario" size="10">
+<label>Idade: </label><input type="number" name="IdadeUsuario">
+<label>Sexo cliente</label>
+<select name="SexoUsuario">
+	<option value="M">Masculino</option>
+	<option value="F">Feminino</option>
+</select> 
+<label>E-Mail: </label><input type="text" name="EmailUsuario" size="10">
+<label>Senha: </label><input type="password" name="SenhaUsuario" size="10">
+<label>Confirmar senha: </label><input type="password" name="ConfirmarSenha" size="10">
+<input type="submit" name="enviar" value="Enviar">
+</form>
+</form>
+</body>
+</html>
